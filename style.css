@@ -1,0 +1,44 @@
+* {
+    background-color: black;
+    font-family: "Fira Code";
+    margin: 0;
+    padding: 0;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+    height: 100vh;
+}
+
+.title-content {
+    display: block;
+    opacity: 0;
+    animation: revealtext .75s forwards;
+}
+
+.title-second {
+    animation-delay: .25s;
+}
+
+.title-third {
+    animation-delay: .5s;
+}
+
+.title-fourth {
+    animation-delay: .75s;
+}
+
+@keyframes revealtext{
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
